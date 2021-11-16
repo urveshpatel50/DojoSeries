@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="progress_bar_height">16dp</dimen>
+    <dimen name="padding">4dp</dimen>
+</resources>
