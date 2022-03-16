@@ -1,3 +1,4 @@
 package com.deloitte.series.coroutine.network.model
 
-data class Result<T>(val data: T?  = null)
+data class Result<FirstResponse, SecondResponse>(val firstResponse: FirstResponse?  = null,
+                                                 val secondResponse: SecondResponse?  = null)
