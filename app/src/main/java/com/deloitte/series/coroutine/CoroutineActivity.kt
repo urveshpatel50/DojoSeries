@@ -30,7 +30,7 @@ class CoroutineActivity : AppCompatActivity() {
         viewModel.fetchPhotos()
     }
 
-    fun registerObservers() {
+    private fun registerObservers() {
         viewModel.success.observe(this) {
 
             photosAdapter.apply {

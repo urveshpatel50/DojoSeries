@@ -15,7 +15,7 @@ object Factory {
         .addConverterFactory(GsonConverterFactory.create())
         .client(OkHttpClient.Builder().connectTimeout(10, TimeUnit.SECONDS)
             .addInterceptor(HttpLoggingInterceptor().apply {
-                level = HttpLoggingInterceptor.Level.BASIC
+                level = HttpLoggingInterceptor.Level.BODY
             }).build()
         ).build()
 
